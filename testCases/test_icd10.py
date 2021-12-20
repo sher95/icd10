@@ -52,12 +52,40 @@ class Test_mainPage:
 
 
     def test_search_locate(self):
-        pytest.skip('later')
+        self.driver.implicitly_wait(10)
+        status = self.mpo.set_search_locate_top()
+        if status:
+            assert True
+        else:
+            traceback.format_exc()
+            self.driver.save_screenshot(".\\ScreenShot\\test_search_locate.png")
+            print("error")
+            self.driver.close()
+            assert False
 
 
     def test_search_corona(self):
-        pytest.skip('later')
+        self.driver.implicitly_wait(10)
+        status = self.mpo.set_search()
+        if status:
+            assert True
+        else:
+            traceback.format_exc()
+            self.driver.save_screenshot(".\\ScreenShot\\test_search.png")
+            print("error")
+            self.driver.close()
+            assert False
 
 
     def test_check_result(self):
-        pytest.skip('later')
+        self.driver.implicitly_wait(10)
+        status = self.mpo.set_result()
+        if status == "U07.1":
+            assert True
+            self.driver.close()
+        else:
+            traceback.format_exc()
+            self.driver.save_screenshot(".\\ScreenShot\\test_result.png")
+            print("error")
+            self.driver.close()
+            assert False
