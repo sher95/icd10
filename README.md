@@ -1,7 +1,9 @@
 ###Anorbank icd10 automation
-On windows should be installed Pythen 3.8 or higher.
+On windows should be installed Python 3.9
 
-1. Create vertual env and activate it
+Clone repository to your IDE
+
+1. Create vertual environment and activate it
 
 2. pip install -r requirements.txt
 
