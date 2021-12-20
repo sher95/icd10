@@ -19,9 +19,3 @@ pytest -v -s .\main.py  --browser chrome
    
 7. After that open cmd and run this command:
 ***allure serve path_to_dir\reports***
-
-If want to remove files from repository and not to push to repo then do this:
-Add file in .gitignore
-
-Then:
- git rm -r --cached path/to/folder
