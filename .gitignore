@@ -2,4 +2,3 @@
 .pytest_cache
 data.json
 venv
-main.py
