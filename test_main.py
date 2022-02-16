@@ -8,7 +8,7 @@ class Test_icd10:
     def test_logo(self, setup):
         driver = setup
         driver.get(codes)
-        driver.implicitly_wait(10)
+        driver.implicitly_wait(15)
         driver.maximize_window()
         status = driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/a/img").is_displayed()
         if status:
